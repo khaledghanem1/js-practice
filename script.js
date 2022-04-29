@@ -1,6 +1,6 @@
 // 1: Create a userAge variable. if theyre over 21 console log "you're in", if not "sorry + age + is too young"
 /*
-var userAge = 65;
+var userAge = 0;
 if (userAge >= 21) {
     console.log("you're in")
 } else  {
@@ -11,27 +11,25 @@ if (userAge >= 21) {
 /*
 var userAge = prompt("If you are over 21 ")  
 if (userAge >= 21) {
-    console.log("you're in 44" + userAge)
+    console.log("you're in " + userAge)
 }
 else {
     console.log( "sorry " + userAge + " is too young")
 }
 */
 // 3: Create an array of 4 cities, if the first letter of the city is "c, a, l, or n" console log "I love that city + city"
-/* 
-var   arrayCities= ["chicago", "newyork", "atlanta", "cairo", "nebraska", "westmont","oakbrook"]
+/*
+var arrayCities= ["chicago", "newyork", "atlanta", "cairo", "nebraska", "westmont","oakbrook"]
 
-for (var  i = 0; i < arrayCities.length; i++){
+for (var i = 0; i < arrayCities.length; i++){
     console.log(arrayCities[i]);
     if (arrayCities[i].charAt(0) === "c" || arrayCities[i].charAt(0) === "a" ||arrayCities[i].charAt(0) === "l" ||arrayCities[i].charAt(0) === "n")
-    console.log("I love that city! " + arrayCities[i])
+        console.log("I love that city! " + arrayCities[i])
     else {
         console.log("I wish I could relate " + arrayCities[i])
     }
 }
-
 */
-
 // 4: Create an array of 7 cities, for loop through the array and create an if for each one. For exmaple: if chicago, say "I live in Chicago". If "New York", say "New york is so fun"
 /*
 var arrayCities = ["chicago","newyork", "atlanta", "cairo", "nebraska", "westmont","oakbrook"]
@@ -125,7 +123,7 @@ totalPrice(3,1)
 // 9: Get a users families names (prompts), add those to an array (this will be empty at first) (use .push()),
 // then see which names begin with an "a", say "a is so cool + name". 
 //See which names end with a d, say "thats so lit + the name"
-
+/*
 var familiesNames= [];
 
 for (var i = 0; i < 3; i++){
@@ -142,3 +140,83 @@ for ( var j = 0; j < familiesNames.length; j++){
           console.log(" thats so lit " + familiesNames[j])
     }
 }
+*/
+
+// 10 Create a function that takes in an array of different car brands. Create if statements for the brands you like and console log something
+/*
+function carBrands(carArray) {
+    for (var index = 0; index < carArray.length; index ++) {
+        if (carArray[index] === "nissan"){
+            console.log(" I love nissan " + carArray[index])
+        } else if (carArray[index] === "ford"){
+            console.log("they are the best " + carArray[index])
+        } else if (carArray[index] === "bmw"){
+            console.log(" cool car " + carArray[index])
+        }
+    }
+    }
+
+carBrands(["nissan", "ford", "bmw"])
+
+*/
+
+// 11: Create a function that takes in an array of weather for each day i.e marchSecond = ["rain", "snow", "rain", "sunny"] and console log the weather for each day
+/*
+function weather(weatherArray){
+    for (var index = 0; index < weatherArray.length; index ++){
+        if (weatherArray[index] === "march first"){
+            console.log("rain " + weatherArray[index])
+        } else if (weatherArray[index] === "march second"){
+          console.log("snow " + weatherArray[index])
+        }
+    }
+}
+weather(["march first", "march second", "march third", "march forth"]);
+
+function weatherDaily(weatherArray) {
+    console.log("Monday it will " + weatherArray[0]);
+    console.log("Tuesday it will " + weatherArray[1]);
+    console.log("Wednesday it will " + weatherArray[2]);
+    console.log("Thursday it will " + weatherArray[3]);
+    
+}
+
+weatherDaily(["rain", "snow", "sunny", "sleet"])
+weatherDaily(["sunny", "rainy", "rainy", "snowy"])
+*/
+// 12: Create a car with 100 miles. Create a function called drive() that adds 10 miles to the car.
+// Create a maintainance() function that sets the miles back to 0
+
+var carMile = 100;
+document.onkeyup = function(event) {
+ var userType = event.key;
+ console.log(userType)
+ 
+ function drive(){
+     carMile+= 10;
+     console.log(carMile + " car drives")
+ }
+
+ function maintainance(){
+     carMile= 0;
+     console.log(carMile + " car resets")
+ }
+
+    if(userType === "d"){
+        drive()
+    }else if (userType === "m"){
+        maintainance()
+    } else {
+        console.log("please type d or m")
+    }
+
+    
+}
+
+
+
+
+ 
+// 13: Add a document.onkeyup to #12 that lets the user type 
+//to drive and add miles to the car or "m" so it sets the miles to 0
+
