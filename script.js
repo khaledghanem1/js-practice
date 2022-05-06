@@ -1,3 +1,4 @@
+/*
 // 1: Create a userAge variable. if theyre over 21 console log "you're in", if not "sorry + age + is too young"
 /*
 var userAge = 0;
@@ -187,36 +188,59 @@ weatherDaily(["sunny", "rainy", "rainy", "snowy"])
 // 12: Create a car with 100 miles. Create a function called drive() that adds 10 miles to the car.
 // Create a maintainance() function that sets the miles back to 0
 
-var carMile = 100;
-document.onkeyup = function(event) {
- var userType = event.key;
- console.log(userType)
- 
- function drive(){
-     carMile+= 10;
-     console.log(carMile + " car drives")
- }
-
- function maintainance(){
-     carMile= 0;
-     console.log(carMile + " car resets")
- }
-
-    if(userType === "d"){
-        drive()
-    }else if (userType === "m"){
-        maintainance()
-    } else {
-        console.log("please type d or m")
-    }
-
-    
-}
-
-
-
-
- 
 // 13: Add a document.onkeyup to #12 that lets the user type 
 //to drive and add miles to the car or "m" so it sets the miles to 0
+// var carMile = 100;
+// document.onkeyup = function(event) {
+//  var userType = event.key;
+//  console.log(userType)
+ 
+//  function drive(){
+//      carMile+= 10;
+//      console.log(carMile + " car drives")
+//  }
+
+//  function maintainance(){
+//      carMile= 0;
+//      console.log(carMile + " car resets")
+//  }
+
+//     if(userType === "d"){
+//         drive()
+//     }else if (userType === "m"){
+//         maintainance()
+//     } else {
+//         console.log("please type d or m")
+//     }
+// }
+
+// jQuery + logic
+
+//14: Create an empty div in your html with an ID. Create a variable name = "khaled".
+// In the js file, show the name in your html div
+var nameK = "khaled";
+$("#person").append("sakina");
+console.log($("#person").html(nameK));
+ 
+// 15: Create another empty div. Have a variable for age set to 19.
+// Create logic if the age variable under 21 the html will say'you cant enter', if theyre older, say "welcome"
+/*
+var age = 19;
+if (age < 21){
+    console.log("you cant enter ")
+}
+if (age > 21){
+    console.log("Welcome ")
+}
+// 16: Create another empty div. Create a prompt that asks the users name and show "Your Name is" + their name in the html
+let person = prompt("your name is " )
+// 17: Create another empty div. Create a confirm that asks "do you like coffee",
+// if true your html should say "you love coffe", if false your html should say 'how do you not like coffee'
+
+*/
+
+
+
+ 
+
 
