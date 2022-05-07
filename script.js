@@ -218,12 +218,44 @@ weatherDaily(["sunny", "rainy", "rainy", "snowy"])
 
 //14: Create an empty div in your html with an ID. Create a variable name = "khaled".
 // In the js file, show the name in your html div
-var nameK = "khaled";
-$("#person").append("sakina");
-console.log($("#person").html(nameK));
+$(document).ready(function() {
+    var nameK = "khaled";
+    $("#person").html(nameK);
+
+    // 15: Create another empty div. Have a variable for age set to 19.
+    // Create logic if the age variable under 21 the html will say'you cant enter', if theyre older, say "welcome"
+    var age = 21;
+    if (age < 21){
+        $("#age").html("you cant enter ")
+    }
+    if (age >= 21){
+        $("#age").html("Welcome ")
+    }
+
+    // 16: Create another empty div. Create a prompt that asks the users name and show "Your Name is" + their name in the html
+    var ask = prompt("your name is ")
+      $("#ask").html(ask)
+   
+
+
+// 17: Create another empty div. Create a confirm that asks "do you like coffee",
+// if true your html should say "you love coffe", if false your html should say 'how do you not like coffee'
+
+var question = window.confirm("do you like coffee? ");
+{
+    if (question){
+        $("#tea").html(" you love coffee");
+    } else if(question === false){
+        $("#tea").html(" how do you not like coffee");
+    }
+}
+
+});
+    
  
 // 15: Create another empty div. Have a variable for age set to 19.
-// Create logic if the age variable under 21 the html will say'you cant enter', if theyre older, say "welcome"
+// Create logic if the age variable under 21 the html will say'you cant enter',
+// if theyre older, say "welcome"
 /*
 var age = 19;
 if (age < 21){
@@ -232,8 +264,12 @@ if (age < 21){
 if (age > 21){
     console.log("Welcome ")
 }
-// 16: Create another empty div. Create a prompt that asks the users name and show "Your Name is" + their name in the html
-let person = prompt("your name is " )
+// 16: Create another empty div. Create a prompt that asks the users name and show
+// "Your Name is" + their name in the html let person = prompt("your name is " )
+
+
+
+
 // 17: Create another empty div. Create a confirm that asks "do you like coffee",
 // if true your html should say "you love coffe", if false your html should say 'how do you not like coffee'
 
