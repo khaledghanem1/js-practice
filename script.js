@@ -224,7 +224,7 @@ $(document).ready(function() {
 
     // 15: Create another empty div. Have a variable for age set to 19.
     // Create logic if the age variable under 21 the html will say'you cant enter', if theyre older, say "welcome"
-    var age = 21;
+    var age =19;
     if (age < 21){
         $("#age").html("you cant enter ")
     }
