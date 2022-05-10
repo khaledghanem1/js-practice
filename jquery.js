@@ -24,53 +24,53 @@ alert("clicked")
 })
 
 //5: Create a list of different cars in html and everytime its clicked the number shows up next to it
-var carNumber = 0;
+var fordNumber = 0;
 $("#list-1").on("click", function(){
-    carNumber++
-    $("#list-1").html("list "+carNumber)
+    fordNumber++
+    $("#list-1 span").html(" " + fordNumber)
 })
-
+var benzNumber = 0;
 $("#list-2").on("click", function(){
-    carNumber++
-    $("#list-2").html("list "+carNumber)
+    benzNumber++
+    $("#list-2 span").html(" " + benzNumber)
 })
-
+var nissanNumber = 0;
 $("#list-3").on("click", function(){
-    carNumber++
-    $("#list-3").html("list "+carNumber)
+    nissanNumber++
+    $("#list-3 span").html(" " + nissanNumber)
 })
 
 //6: Create a list of different countries in html and everytime each one is clicked a number shows up next to it
-var countryNumber = 0;
+var countryFrance = 0;
 $("#list-4").on("click", function(){
-    countryNumber++
-    $("#list-4").html("list "+countryNumber)
+    countryFrance++
+    $("#list-4 span").html(" " + countryFrance)
 })
-
+var countryEgypt = 0;
 $("#list-5").on("click", function(){
-    countryNumber++
-    $("#list-5").html("list "+countryNumber)
+    countryEgypt++
+    $("#list-5 span").html(" " + countryEgypt)
 })
-
+var countryCanada = 0;
 $("#list-6").on("click", function(){
-    countryNumber++
-    $("#list-6").html("list "+countryNumber)
+    countryCanada++
+    $("#list-6 span").html(" " + countryCanada)
 })
 
 //7: Create a h3 tag saying "where should I move?" where everytime its clicked it shows a random country from an array you create
 var myArray = ["usa","canada", "uae"];
 $("#random-country").on("click", function(){
     var randomCountry = myArray[Math.floor(Math.random()*myArray.length)];
-    $("#random-country").html(++randomCountry)
+    $("#random-country span").html(randomCountry)
     
 
 
 })
 //8: Create a button saying "which car should I buy" and everytime its clicked it shows a random car
-var cars = ["nissan", "benz"]
+var carArray = ["nissan", "benz"]
 $("#car").on("click", function(){
-    var cars = cars[Math.floor(Math.random()*cars.length)];
-    $("#car").html(cars)
+    var carRandom = carArray[Math.floor(Math.random()*carArray.length)];
+    $("#car span").html(carRandom)
 })
 
 
