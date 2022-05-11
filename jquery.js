@@ -73,5 +73,19 @@ $("#car").on("click", function(){
     $("#car span").html(carRandom)
 })
 
+//9: Create an array of cars and loop through and then show it in the html
+var array = ["bmw","benz","mustang"]
+ for (let index = 0; index < array.length; index++) {
+     const item = array[index];
+     console.log(item)
+     $("#auto span").append(item + " ") 
+ }
+
+// 10: create a function that takes in an array and shows the values in the html
+
+// 11: create an object about a person like name, address, phone number and show the values in the html
+
+// 12: Create a function that takes in an object and then shows the values in the html
+
 
 });
